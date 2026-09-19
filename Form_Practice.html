@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get"><!-- to send data we're using action in the url form--> <!-- in method get and post methods are there for sending data to send the data in the url we're using get method so it is not secure and the data is visible in the url and in the post method the data is not visible and the data is sent in the body part so it is secure than get method...!!!! -->
+
+        <fieldset>
+            <legend align="center"> Signup </legend>
+            <label for="uname"> Username : </label>
+            <input type="text" name="Username" id="Username" placeholder="Enter Username" autofocus autocomplete="on" required maxlength="10"> <br><br>
+
+            <label for="password"> Password : </label>
+            <input type="password" name="pwd" id="pwd" placeholder="Enter Password" required maxlength="7"> <br> <br>
+
+            <label> Gender : </label> <br> <br>
+            <input type="radio" name="Gender" value="Male" checked> Male <br> <br>
+            <input type="radio" name="Gender" value="Female"> Female <br> <br>
+            
+            <label> Area of Interest : </label> 
+            <input type="checkbox" name="Interest" value="DS" checked> DS 
+            <input type="checkbox" name="Interest" value="DBMS"> DBMS 
+            <input type="checkbox" name="Interest" value="CN"> CN
+            <input type="checkbox" name="Interest" value="Full Stack"> Full Stack <br><br> 
+
+            
+            <label> Department : </label>
+            <select name="degree_branch" id="degree">
+                <option value="select" selected disabled> --Select Department-- </option>
+                <optgroup label="Computer">
+                    <option value="CSE"> CSE </option>
+                    <option value="CST"> CST </option>
+                    <option value="CE"> CE </option>
+                    <option value="IT"> IT </option>
+                </optgroup>
+
+                <optgroup label="Other">
+                    <option value="Mechanical"> Mechanical </option>
+                    <option value="Civil"> Civil </option>
+                    <option value="EC"> EC </option>
+                    <option value="Architecture"> Architecture </option>
+                </optgroup>
+            </select> <br> <br>
+
+            <label> Address : </label> 
+            <textarea name="msg" id="msg" rows="10" cols="20"> hello </textarea> <br> <br>
+
+            <label> Upload CV : </label>
+            <input type="file" name="Resume" id="Resume" accept=".pdf, .doc" multiple> <br><br>
+
+            <label> Date : </label> 
+            <input type="date" name="dob" id="dob"> <br> <br>
+
+            <label> Email : </label>
+            <input type="email" name="email" id="email" required> <br><br>
+
+            <input type="submit" value="Click Me"> 
+            <input type="reset" value="Reset"> <br><br>
+
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -6,22 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Student Registration</h1>
     <form action="" method="get"><!-- to send data we're using action in the url form--> <!-- in method get and post methods are there for sending data to send the data in the url we're using get method so it is not secure and the data is visible in the url and in the post method the data is not visible and the data is sent in the body part so it is secure than get method...!!!! -->
 
         <fieldset>
-            <legend> Information </legend>
-            <label for="uname"> Username : </label>
-            <input type="text" name="Username" id="Username" placeholder="Enter Username" autofocus autocomplete="on" required maxlength="10"> <br><br>
+            <legend> Customer Detail </legend>
+            <label for="uname"> Name : </label>
+            <input type="text" name="name" id="name" placeholder="Enter your Name" autofocus autocomplete="on" required maxlength="10"> <br><br>
 
-            <label for="password"> Password : </label>
-            <input type="password" name="pwd" id="pwd" placeholder="Enter Password" required maxlength="7"> <br> <br>
-
+            <label> Number : </label>
+            <input type="number" name="phone" id="phone" required max="10"> <br> <br>
+            
             <label> Email : </label>
             <input type="email" name="email" id="email" required> <br><br>
-
-            <label> Phone : </label>
-            <input type="number" name="phone" id="phone" required max="10"> <br> <br>
 
             <label> Gender : </label> <br> <br>
             <input type="radio" name="Gender" value="Male"> Male <br> <br>
