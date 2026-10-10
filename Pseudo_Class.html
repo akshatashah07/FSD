@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <style>
+            a:link{color:red}
+            a:visited{color:green}
+            a:hover{color: yellow; font-size: 50px; background-color: blue;}
+            a:active{color:black}
+            input:focus{background-color: red; border: 5px dashed green;}
+            ul li:nth-child(2) {color: red; font-size: 30px;}
+            ul li:not(.special){color:green; font-size: 50px;}
+        </style>
+    </head>
+    <body>
+        <h2>
+            Styling a link depending on state or position
+        </h2>
+        <p>
+            <b><a href="https://www.google.com" target="_blank"> This is a Link. </a></b> <br><br>
+            First Name : <input type="text" placeholder="Click to focus"> <br> <br>
+            <ul>
+                <li>List - 1</li>
+                <li>List - 2</li>
+                <li class="special">List - 3</li>
+                <li>List - 4</li>
+            </ul>
+        </p>
+    </body>
+</html>
