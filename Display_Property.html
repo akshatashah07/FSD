@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <style>
+            .box{
+                background-color: lightblue;
+                border: 2px solid navy;
+                padding: 10px;
+                margin: 5px;
+                text-align: center;
+            }
+            .inline div{
+                display: inline;
+                background-color: yellow;
+                border: 1px solid orange;
+                padding: 5px;
+                margin: 2px;
+            }
+            .block span{
+                display: block;
+                background-color: red;
+                border: 2px dashed gray;
+                padding: 10px;
+                margin-bottom: 5px;
+                width: 100px;
+                height: 50px;
+            }
+            .inline-block div{
+                display: inline-block;
+                background-color: lightgreen;
+                border: 2px solid red;
+                width: 120px;
+                height: 60px;
+                margin: 5px;
+            }
+            .none P{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h2> CSS Display Property </h2>
+        <h3> display:inline </h3>
+        <div class="inline box">
+            <div>
+                Inline-1
+            </div>
+            <div>
+                Inline-2
+            </div>
+            <div>
+                Inline-3
+            </div>
+        </div>
+        <h2> Display:block </h2>
+        <div class="block box">
+            <span>
+                Block-1
+            </span>
+            <span>
+                Block-2
+            </span>
+            <span>
+                Block-3
+            </span>
+        </div>
+        <h2> Display:Inline-Box </h2>
+        <div class="inline-block box">
+            <div>
+                Box-1
+            </div>
+            <div>
+                Box-2
+            </div>
+            <div>
+                Box-3
+            </div>
+        </div>
+        <div class="none box">
+            <p>
+                This text is hidden using display:none
+            </p>
+        </div>
+        <p>
+            The hidden text does not take any space on the page
+        </p>
+    </body>
+</html>

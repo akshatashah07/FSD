@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-fr{
+            display: grid;
+            grid-template-columns: 200px 1fr 2fr;
+            grid-template-rows: 1fr 2fr;
+            gap: 10px;
+            background-color: lightblue;
+            padding: 10px;
+            margin-bottom: 40px;
+        }
+        .item{
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-fr">
+        <div class="item">
+            200px(Fixed)
+        </div>
+        <div class="item">
+            1fr(Flexible)
+        </div>
+        <div class="item">
+            2fr(Twice as wide)
+        </div>
+    </div>
+</body>
+</html>
