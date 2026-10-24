@@ -1,0 +1,46 @@
+<!-- Create an animation for a <div> element that moves in a square path while changing its
+background color at each corner.
+The animation should have a duration of 10 seconds and should start as if it has already been
+running for 2 seconds (i.e., 2 seconds already completed).
+It should play forward and then in reverse continuously.
+The animation must change both the background color and the position of the <div> element
+at 25%, 50%, 75%, and 100% completion.
+Additionally, rotate the <div> at any angle while it moves along the path. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            margin-top: 100px;
+            margin-left: 200px;
+            background-color: pink;
+            border: 4px solid black;
+            animation-name: Q37;
+            animation-duration: 10s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            transition: 2s;
+            position: relative;
+        }
+        @keyframes Q37 {
+            25%{background-color: blue; transform: translate(200px,0px) rotate(50deg);}
+            50%{background-color: black; transform: translate(200px,200px) rotate(140deg);}
+            75%{background-color: yellow; transform: translate(0px,200px) rotate(200deg);}
+            100%{background-color: green; transform: translate(0px,0px) rotate(270deg);}
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        
+    </div>
+</body>
+</html>

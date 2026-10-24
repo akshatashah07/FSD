@@ -1,0 +1,24 @@
+<!-- Write down HTML/CSS code that will display an image (img2.png) and hides an image (img1.png)
+if viewport is maximum 650 pixels wide. If viewport is greater than 650px then display
+(img1.png) and hides (img2.png). -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(beautiful_image);
+        }
+        @media only screen and (max-width:650px) { 
+            body{
+                background-image: url(moon.jfif);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

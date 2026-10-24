@@ -1,0 +1,54 @@
+<!-- Write HTML & CSS code to design registration form having fields like Name, Password, Contact
+Number, Gender, Submit button & Reset Button. Follow below requirements:
+• While clicking on Name text, background-color of its input field change to light-green.
+• While hovering on password & Contact number text, font-size of its input fields will increase
+respectively.
+• While clicking on gender fields, background-color of the text should change to blue.
+• Both submit & reset button text should bold & italic, while hovering -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text]:focus{
+            background-color: lightgreen;
+        }
+        input[type=password]:hover{
+            font-size: xx-large;
+        }
+        input[type=number]:hover{
+            font-size: xx-large;
+        }
+        input[type=gender]:active{
+            background-color: blue;
+        }
+        input[type=submit]:hover{
+            font-style: italic;
+            font-weight: bold;
+        }
+        input[type=reset]:hover{
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        Name :
+        <input type="text"> <br> <br>
+        Password :
+        <input type="password"> <br> <br>
+        Contact Number :
+        <input type="number"> <br> <br>
+        Gender :
+        <input type="gender"> <br><br>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>
